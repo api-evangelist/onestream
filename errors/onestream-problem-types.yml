@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20WebAPI%20Endpoints.html
+format: non-rfc9457
+envelope: >-
+  Errors are returned as an HTTP status code plus a descriptive error message
+  in the response body (not application/problem+json). Success is HTTP 200.
+problems:
+- status: 200
+  title: Success
+  description: Request completed successfully.
+- status: 400
+  title: Bad Request
+  description: Missing or invalid arguments (e.g. missing BaseWebServerUrl or ApplicationName).
+  source_operation: Authentication/LogonAndReturnCookie
+- status: 401
+  title: Unauthorized
+  description: Missing or invalid bearer token / access token.
+- status: 403
+  title: Forbidden
+  description: >-
+    Caller lacks the required role. Data Provider SQL and Method command
+    endpoints require the Administrator role.
+  source_operation: DataProvider/GetAdoDataSetForSqlCommand
+- status: 500
+  title: Server Error
+  description: Authentication failed or execution error; returns a descriptive error message.

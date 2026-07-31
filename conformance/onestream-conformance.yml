@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://documentation.onestream.com/docs/Content/REST%20API/Authentication2.html
+standards:
+- id: oauth2
+  conforms: true
+  evidence: REST API supports OAuth 2.0 client_credentials grant for external providers
+- id: oidc
+  conforms: true
+  evidence: OneStream IdentityServer + OIDC-compliant external identity providers (Entra ID, Okta, PingFederate)
+- id: saml2
+  conforms: true
+  evidence: SAML 2.0 compliant external identity providers supported for authentication
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: API returns descriptive error messages with HTTP status codes, not application/problem+json
+- id: rest-json
+  conforms: true
+  evidence: RESTful web service accepting and returning JSON over HTTPS
+compliance_programs:
+- SOC 1 (twice-annual audit)
+- SOC 2 Type II (twice-annual audit)
+- ISO 27001 (certified, Alcumus ISOQAR, annual audit)
+- FedRAMP ATO
+- Cloud Security Alliance CAIQ / STAR
+- NIST 800-53 alignment
+compliance_source: https://trust.onestream.com/
+compliance_note: >-
+  Certifications validated via OneStream's Vanta-hosted Trust Center and the
+  ISO 27001 certification announcement; see security/onestream-trust-center.yml.

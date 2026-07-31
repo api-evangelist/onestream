@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Overview.html
+versioning:
+  scheme: query-parameter
+  param: api-version
+  observed: ['5.2.0', '7.2.0']
+  platform_releases: ['7.2', '8.x', '9.3.0']
+  docs: https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20WebAPI%20Endpoints.html
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    OneStream ships breaking changes across major platform versions (e.g. REST
+    API authentication changed in v8); no formal published RFC 8594
+    Sunset/Deprecation header policy was found. Platform release notes are the
+    source of truth for deprecations.
+sla:
+  url: https://documentation.onestream.com/1375907/Content/OneStreamServiceDescription/Business%20Continuity%20and%20Disaster.html
+  note: Service availability covered under the OneStream Service Description / SaaS terms.
+status_page: null
+status_page_note: >-
+  No public OneStream Software (enterprise CPM) status page was confirmed.
+  (status.onestream.live belongs to a different, unrelated 'OneStream Live'
+  streaming product and is intentionally NOT wired here.)
+deprecated_operations: []

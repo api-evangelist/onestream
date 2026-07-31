@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://documentation.onestream.com/
+docs: https://documentation.onestream.com/
+scheme: platform-version
+current_version: '9.3.0'
+note: >-
+  OneStream publishes versioned platform documentation and release notes per
+  platform version; the REST (Web) API is versioned independently via the
+  api-version query parameter. Entries below capture the recent published
+  documentation versions rather than a full dated changelog.
+entries:
+- version: '9.3.0'
+  date: null
+  breaking: null
+  highlights:
+  - Identity and Access Management Guide 9.3.0 release
+  - Current documented platform version line
+- version: '8.x'
+  date: null
+  breaking: true
+  highlights:
+  - REST API authentication breaking changes introduced in v8 (bearer token / IdentityServer model)
+- version: '7.2.0'
+  date: null
+  breaking: false
+  highlights:
+  - REST API adds asynchronous calls alongside synchronous for large datasets
+- version: '5.2.0'
+  date: null
+  breaking: false
+  highlights:
+  - Baseline documented api-version for Data Management and Data Provider endpoints

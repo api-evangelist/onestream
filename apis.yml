@@ -1,8 +1,30 @@
 aid: onestream
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/onestream.png
 name: OneStream
-description: 'OneStream is a company surfaced as a portfolio company of d1-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: software. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  OneStream is an enterprise finance platform that unifies financial and
+  operational data into a single source of truth, spanning financial close and
+  consolidation, planning, budgeting, forecasting and financial planning &
+  analysis (FP&A), account reconciliation, and reporting. It applies AI and
+  machine learning to automate core finance work so teams can focus on analysis
+  and decision-making. For developers and integrators OneStream exposes the
+  OneStream Web (REST) API — a client-agnostic JSON-over-HTTPS service with
+  Authentication, Data Management, and Data Provider endpoints — secured with
+  bearer tokens (Personal Access Tokens via OneStream IdentityServer, or OAuth
+  2.0 client_credentials through Microsoft Entra ID, Okta, or PingFederate) and
+  extended through the Solution Exchange (MarketPlace, PartnerPlace, OpenPlace).
 url: https://raw.githubusercontent.com/api-evangelist/onestream/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +34,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Software
-apis: []
+- Finance
+- Corporate Performance Management
+- Financial Planning and Analysis
+- Financial Close
+- Consolidation
+- Enterprise
+- API
+apis:
+- name: OneStream Web (REST) API
+  description: >-
+    RESTful JSON web service exposing OneStream Data Automation functions:
+    Authentication, Data Management (ExecuteSequence, ExecuteStep), and Data
+    Provider (ADO datasets from adapters, Cube Views, SQL, and method commands).
+    Client-agnostic; POST + JSON; versioned via the api-version query parameter;
+    bearer-token authentication.
+  humanURL: https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Overview.html
+  baseURL: https://{server}/OneStreamApi/api
+  properties:
+  - type: Documentation
+    url: https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Overview.html
+  - type: APIReference
+    url: https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20WebAPI%20Endpoints.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +68,54 @@ maintainers:
 common:
 - type: Website
   url: https://www.onestream.com
+- type: DeveloperPortal
+  url: https://dev.onestream.com
+- type: Documentation
+  url: https://documentation.onestream.com/
+- type: APIReference
+  url: https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Overview.html
+- type: GettingStarted
+  url: https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20REST%20API%20Implementation.html
+- type: Support
+  url: https://www.onestream.com/support/
+- type: Community
+  url: https://community.onestreamsoftware.com/
+- type: Blog
+  url: https://www.onestream.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/OneStreamSoftware
+- type: TermsOfService
+  url: https://www.onestream.com/saas-terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.onestream.com/privacy-policy/
+- type: SignUp
+  url: https://www.onestream.com/request-demo/
+- type: Marketplace
+  url: https://solution-exchange.onestream.com/
+- type: Authentication
+  url: authentication/onestream-authentication.yml
+- type: Conventions
+  url: conventions/onestream-conventions.yml
+- type: Lifecycle
+  url: lifecycle/onestream-lifecycle.yml
+- type: ChangeLog
+  url: changelog/onestream-changelog.yml
+- type: ErrorCatalog
+  url: errors/onestream-problem-types.yml
+- type: Conformance
+  url: conformance/onestream-conformance.yml
+- type: Compliance
+  url: https://trust.onestream.com/
+- type: TrustCenter
+  url: security/onestream-trust-center.yml
+- type: DomainSecurity
+  url: security/onestream-domain-security.yml
+- type: MCPServer
+  url: mcp/onestream-mcp.yml
+- type: LLMsTxt
+  url: llms/onestream-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

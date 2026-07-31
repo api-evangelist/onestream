@@ -1,0 +1,57 @@
+generated: '2026-07-20'
+method: searched
+source: https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Overview.html
+docs:
+- https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20WebAPI%20Endpoints.html
+- https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Summary.html
+summary: >-
+  Cross-cutting request/response semantics for the OneStream Web (REST) API, a
+  JSON-over-HTTPS data-automation service exposing Authentication, Data
+  Management, and Data Provider endpoints. Captured from the published REST API
+  documentation; cross-links authentication/, lifecycle/, and errors/.
+conventions:
+  authentication:
+    style: bearer-token
+    header: 'Authorization: Bearer <token>'
+    detail: See authentication/onestream-authentication.yml (PAT or OAuth2 client_credentials).
+  transport:
+    protocol: https
+    style: RPC-over-HTTP
+    http_method: POST
+    base_path: /OneStreamApi/api
+    resources: [Authentication, DataManagement, DataProvider]
+  content_type:
+    request: application/json
+    response: application/json
+    note: API is client-agnostic; accepts and returns JSON.
+  versioning:
+    style: query-parameter
+    param: api-version
+    example: '?api-version=7.2.0'
+    detail: >-
+      The api-version query parameter selects the API contract (observed values
+      include 5.2.0 and 7.2.0). See lifecycle/onestream-lifecycle.yml.
+  execution_model:
+    modes: [synchronous, asynchronous]
+    detail: >-
+      As of v7.2.0 calls can be synchronous or asynchronous; asynchronous is
+      recommended for large datasets or long-running data-management sequences.
+  pagination:
+    documented: false
+    note: >-
+      No cursor/offset pagination contract is documented; Data Provider calls
+      return full ADO datasets (data tables) in the response.
+  idempotency:
+    documented: false
+    note: >-
+      No idempotency-key header or contract is documented for the Web API.
+  error_envelope:
+    style: descriptive-message
+    format: non-rfc9457
+    detail: >-
+      Failures return an HTTP status (e.g. 400 Bad Request for missing
+      arguments, 500 for authentication/execution failure) with a descriptive
+      error message rather than an RFC 9457 problem+json body. See
+      errors/onestream-problem-types.yml.
+  rate_limiting:
+    documented: false

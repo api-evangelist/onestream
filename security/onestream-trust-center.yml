@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+url: https://trust.onestream.com/
+platform: Vanta
+certifications:
+- SOC 1
+- SOC 2 Type II
+- ISO 27001
+- FedRAMP ATO
+- CSA CAIQ / STAR
+- NIST 800-53 (aligned)
+evidence:
+- source: https://trust.onestream.com/
+  kind: trust-center
+  keywords: [trust center, security, compliance, vanta]
+- source: https://www.onestream.com/blog/iso-27001-certification-and-what-this-means-for-onestream-customers/
+  kind: certification-announcement
+  keywords: [iso 27001, soc, fedramp, csa caiq]
+- source: https://documentation.onestream.com/1375907/Content/OneStreamServiceDescription/Security.html
+  kind: service-description
+  keywords: [nist 800-53, iso 27001, soc1, soc2]
+note: >-
+  OneStream's Trust Center is hosted on Vanta at trust.onestream.com. ISO 27001
+  certificates and audit reports are available to existing customers via the
+  OneStream MarketPlace; prospects request them via account representative.

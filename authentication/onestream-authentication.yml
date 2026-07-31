@@ -1,0 +1,51 @@
+generated: '2026-07-20'
+method: searched
+source: https://documentation.onestream.com/docs/Content/REST%20API/Authentication2.html
+docs:
+- https://documentation.onestream.com/docs/Content/REST%20API/Authentication2.html
+- https://documentation.onestream.com/docs/Content/REST%20API/Configure%20OneStream%20API%20for%20External.html
+- https://documentation.onestream.com/1375907/Content/IDM/OneStream%20IdentityServer.html
+summary:
+  types:
+  - oauth2
+  - http
+  api_key_in: []
+  oauth2_flows:
+  - clientCredentials
+  notes: >-
+    OneStream secures its REST (Web) API with bearer tokens. Cloud tenants on
+    OneStream IdentityServer issue Personal Access Tokens (PATs) managed in the
+    Identity & Access Management portal. Self-hosted deployments federate to an
+    external identity provider (Microsoft Entra ID / Azure AD, Okta, or
+    PingFederate) using the OAuth 2.0 client_credentials grant. Access tokens
+    are presented on every request as `Authorization: Bearer <token>`.
+schemes:
+- name: PersonalAccessToken
+  type: http
+  scheme: bearer
+  bearerFormat: PAT
+  description: >-
+    Personal Access Token generated in the OneStream Identity & Access
+    Management portal (IdentityServer). Works with native auth and any OIDC or
+    SAML 2.0 compliant external identity provider. Sent as
+    `Authorization: Bearer <token>`.
+  source: https://documentation.onestream.com/1375907/Content/IDM/OneStream%20IdentityServer.html
+- name: OAuth2ClientCredentials
+  type: oauth2
+  description: >-
+    OAuth 2.0 client_credentials grant for self-hosted environments federating
+    to a supported external provider (Microsoft Entra ID / Azure AD, Okta,
+    PingFederate). Requires Client ID, Client Secret, and the provider Token
+    URL; the returned access token is used as a bearer token on API calls.
+  flows:
+  - flow: clientCredentials
+    tokenUrl: provider-specific (Azure AD / Okta / PingFederate token endpoint)
+    scopes: {}
+  source: https://documentation.onestream.com/docs/Content/REST%20API/Configure%20OneStream%20API%20for%20External.html
+external_identity_providers:
+- Microsoft Entra ID (Azure Active Directory)
+- Okta
+- PingFederate
+identity_protocols:
+- OIDC
+- SAML 2.0

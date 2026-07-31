@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20WebAPI%20Endpoints.html
+note: >-
+  No official hosted/remote OneStream MCP server was found. The tools below are
+  a candidate mapping derived from the publicly documented OneStream Web (REST)
+  API operations, provided as a starting point for an MCP wrapper. Not an
+  authoritative or published OneStream artifact.
+server:
+  name: onestream
+  transport: http
+  url: null
+tools:
+- name: logon
+  description: Authenticate and obtain a session/cookie for the OneStream Web API.
+  source_operation: Authentication/LogonAndReturnCookie
+- name: execute_sequence
+  description: Execute a OneStream Data Management sequence.
+  source_operation: DataManagement/ExecuteSequence
+- name: execute_step
+  description: Execute a single OneStream Data Management step.
+  source_operation: DataManagement/ExecuteStep
+- name: get_dataset_for_adapter
+  description: Return an ADO dataset from a configured OneStream data adapter.
+  source_operation: DataProvider/GetAdoDataSetForAdapter
+- name: get_dataset_for_cube_view
+  description: Return an ADO dataset from a OneStream Cube View command.
+  source_operation: DataProvider/GetAdoDataSetForCubeViewCommand
+- name: get_dataset_for_sql
+  description: Return an ADO dataset from a SQL command (requires Administrator role).
+  source_operation: DataProvider/GetAdoDataSetForSqlCommand
+- name: get_dataset_for_method
+  description: Return an ADO dataset from a method command (requires Administrator role).
+  source_operation: DataProvider/GetAdoDataSetForMethodCommand
