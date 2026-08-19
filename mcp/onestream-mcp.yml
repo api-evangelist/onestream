@@ -2,11 +2,9 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20WebAPI%20Endpoints.html
-note: >-
-  No official hosted/remote OneStream MCP server was found. The tools below are
-  a candidate mapping derived from the publicly documented OneStream Web (REST)
-  API operations, provided as a starting point for an MCP wrapper. Not an
-  authoritative or published OneStream artifact.
+note: No official hosted/remote OneStream MCP server was found. The tools below are a candidate mapping
+  derived from the publicly documented OneStream Web (REST) API operations, provided as a starting point
+  for an MCP wrapper. Not an authoritative or published OneStream artifact.
 server:
   name: onestream
   transport: http
@@ -33,3 +31,9 @@ tools:
 - name: get_dataset_for_method
   description: Return an ADO dataset from a method command (requires Administrator role).
   source_operation: DataProvider/GetAdoDataSetForMethodCommand
+deployment:
+  mode: none
+  verified: derived
+  tools: 7
+  checked: '2026-08-12'
+  source: catalog MCP census
