@@ -44,6 +44,15 @@ tags:
 - Financial Close
 - Consolidation
 - Enterprise
+tags_raw:
+- Company
+- Software
+- Finance
+- Corporate Performance Management
+- Financial Planning and Analysis
+- Financial Close
+- Consolidation
+- Enterprise
 - API
 apis:
 - name: OneStream Web (REST) API
