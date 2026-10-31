@@ -64,6 +64,101 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-OneStream is a company surfaced as a portfolio company of d1-capital and added to the API Evangelist network as a stub for enrichment. Sector: software. This profile is a lead awaiting the enrichment pipeline.
+OneStream is an enterprise finance platform that unifies financial and operational data into a single source of truth, spanning financial close and consolidation, planning, budgeting, forecasting and financial planning & analysis (FP&A), account reconciliation, and reporting. It applies AI and machine learning to automate core finance work so teams can focus on analysis and decision-making. For developers and integrators OneStream exposes the OneStream Web (REST) API — a client-agnostic JSON-over-HTTPS service with Authentication, Data Management, and Data Provider endpoints — secured with bearer tokens (Personal Access Tokens via OneStream IdentityServer, or OAuth 2.0 client_credentials through Microsoft Entra ID, Okta, or PingFederate) and extended through the Solution Exchange (MarketPlace, PartnerPlace, OpenPlace).
 
-Backed by: d1-capital — https://www.onestream.com
+**Areas:** Company · Software · Finance · Corporate Performance Management · Financial Planning and Analysis · Financial Close · Consolidation · Enterprise
+
+## OneStream on APIs.io
+
+Everything profiled for OneStream is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/onestream/](https://apis.io/providers/onestream/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [OneStream Web (REST) API](https://apis.io/apis/onestream/onestream-web-rest-api/) — RESTful JSON web service exposing OneStream Data Automation functions: Authentication, Data Management (ExecuteSequence, ExecuteStep), and Data Provider…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [onestream](https://apis.io/servers/onestream/onestream/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Onestream Authentication](https://apis.io/security/onestream/onestream-authentication/)
+- [Onestream Domain Security](https://apis.io/security/onestream/onestream-domain-security/)
+- [Onestream Trust Center](https://apis.io/security/onestream/onestream-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.onestream.com)
+- [Documentation](https://documentation.onestream.com/)
+- [Getting started](https://documentation.onestream.com/docs/Content/REST%20API/OneStream%20REST%20API%20Implementation.html)
+- [API reference](https://documentation.onestream.com/docs/Content/REST%20API/REST%20API%20Overview.html)
+- [Sign up](https://www.onestream.com/request-demo/)
+- [Support](https://www.onestream.com/support/)
+- [Blog](https://www.onestream.com/blog/)
+- [Compliance](https://trust.onestream.com/)
+- [Terms of service](https://www.onestream.com/saas-terms-and-conditions/)
+- [Privacy policy](https://www.onestream.com/privacy-policy/)
+- [GitHub](https://github.com/OneStreamSoftware)
+
+## API Evangelist rating
+
+**Kin Score 35.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 50.0 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/onestream/](https://apis.io/providers/onestream/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OneStream: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/onestream/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
